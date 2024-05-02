@@ -1,0 +1,738 @@
+INFO - 2024-04-23 01:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 01:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 01:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 01:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 01:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 01:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 01:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 02:45:44 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: Home/Jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 912.
+ 1 SYSTEMPATH\Model.php(704): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(910): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(38): CodeIgniter\Model->__call('Jadwal', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jadwal()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-04-23 02:48:12 --> mysqli_sql_exception: Table 'ebenezer.tgl_jadwal_ibadah' doesn't exist in C:\xampp\htdocs\websitegereja-ci4\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\websitegereja-ci4\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\websitegereja-ci4\system\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\websitegereja-ci4\system\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\websitegereja-ci4\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\websitegereja-ci4\app\Models\ModelHome.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\websitegereja-ci4\app\Controllers\Home.php(38): App\Models\ModelHome->Jadwal()
+#6 C:\xampp\htdocs\websitegereja-ci4\system\CodeIgniter.php(933): App\Controllers\Home->Jadwal()
+#7 C:\xampp\htdocs\websitegereja-ci4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\websitegereja-ci4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\websitegereja-ci4\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\websitegereja-ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\websitegereja-ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-04-23 02:48:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ebenezer.tgl_jadwal_ibadah' doesn't exist
+[Method: GET, Route: Home/Jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 675.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tgl_jadwal_ibadah`', [], false)
+ 2 APPPATH\Models\ModelHome.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(38): App\Models\ModelHome->Jadwal()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jadwal()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 02:48:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ebenezer.tgl_jadwal_ibadah' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tgl_jadwal_ibadah`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tgl_jadwal_ibadah`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tgl_jadwal_ibadah`', [], false)
+ 4 APPPATH\Models\ModelHome.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(38): App\Models\ModelHome->Jadwal()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jadwal()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 02:48:12 --> [Caused by] mysqli_sql_exception: Table 'ebenezer.tgl_jadwal_ibadah' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `tgl_jadwal_ibadah`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tgl_jadwal_ibadah`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tgl_jadwal_ibadah`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tgl_jadwal_ibadah`', [], false)
+ 5 APPPATH\Models\ModelHome.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(38): App\Models\ModelHome->Jadwal()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jadwal()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 02:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 02:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 03:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 04:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 04:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 05:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 05:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 05:21:17 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 05:26:48 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 05:36:12 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 07:29:28 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 07:31:50 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 07:31:53 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 07:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 07:33:13 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 07:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 07:42:14 --> ErrorException: Undefined variable $nama
+[Method: GET, Route: Jemaat]
+in APPPATH\Views\v_jemaat.php on line 40.
+ 1 APPPATH\Views\v_jemaat.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_jemaat.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_jemaat.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_jemaat', [], true)
+ 5 APPPATH\Views\v_template_admin.php(199): view('v_jemaat')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\Jemaat.php(25): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jemaat->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 07:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 07:46:26 --> ErrorException: Undefined array key "no_hp"
+[Method: GET, Route: Jemaat]
+in APPPATH\Views\v_jemaat.php on line 42.
+ 1 APPPATH\Views\v_jemaat.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_hp"', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_jemaat.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_jemaat.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_jemaat', [], true)
+ 5 APPPATH\Views\v_template_admin.php(199): view('v_jemaat')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\Jemaat.php(25): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jemaat->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 07:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 07:49:33 --> ErrorException: Undefined array key "no_hp"
+[Method: GET, Route: Jemaat]
+in APPPATH\Views\v_jemaat.php on line 42.
+ 1 APPPATH\Views\v_jemaat.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_hp"', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_jemaat.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_jemaat.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_jemaat', [], true)
+ 5 APPPATH\Views\v_template_admin.php(199): view('v_jemaat')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\Jemaat.php(25): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jemaat->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 07:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 07:49:56 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 07:58:27 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 07:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 07:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-23 08:03:30 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\websitegereja-ci4\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\websitegereja-ci4\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\websitegereja-ci4\system\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\websitegereja-ci4\system\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\websitegereja-ci4\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\websitegereja-ci4\app\Models\ModelJemaat.php(17): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\websitegereja-ci4\app\Controllers\Jemaat.php(39): App\Models\ModelJemaat->InsertData(Array)
+#6 C:\xampp\htdocs\websitegereja-ci4\system\CodeIgniter.php(933): App\Controllers\Jemaat->InsertData()
+#7 C:\xampp\htdocs\websitegereja-ci4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+#8 C:\xampp\htdocs\websitegereja-ci4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\websitegereja-ci4\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\websitegereja-ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\websitegereja-ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-04-23 08:03:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama' cannot be null
+[Method: POST, Route: Jemaat/InsertData]
+in SYSTEMPATH\Database\BaseConnection.php on line 675.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (:nama:, :alamat:, :no_tlpn:, :email:, :tanggal_lahir:, :status:)', [...], false)
+ 2 APPPATH\Models\ModelJemaat.php(17): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Jemaat.php(39): App\Models\ModelJemaat->InsertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jemaat->InsertData()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:03:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, \'Jakut\', \'082246942600\', \'jeremy@gmail.com\', \'2024-04-12\', \'Anak\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, \'Jakut\', \'082246942600\', \'jeremy@gmail.com\', \'2024-04-12\', \'Anak\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (:nama:, :alamat:, :no_tlpn:, :email:, :tanggal_lahir:, :status:)', [...], false)
+ 4 APPPATH\Models\ModelJemaat.php(17): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Jemaat.php(39): App\Models\ModelJemaat->InsertData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jemaat->InsertData()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:03:30 --> [Caused by] mysqli_sql_exception: Column 'nama' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, \'Jakut\', \'082246942600\', \'jeremy@gmail.com\', \'2024-04-12\', \'Anak\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, \'Jakut\', \'082246942600\', \'jeremy@gmail.com\', \'2024-04-12\', \'Anak\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, \'Jakut\', \'082246942600\', \'jeremy@gmail.com\', \'2024-04-12\', \'Anak\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (:nama:, :alamat:, :no_tlpn:, :email:, :tanggal_lahir:, :status:)', [...], false)
+ 5 APPPATH\Models\ModelJemaat.php(17): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Jemaat.php(39): App\Models\ModelJemaat->InsertData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jemaat->InsertData()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 08:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-23 08:04:18 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\websitegereja-ci4\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\websitegereja-ci4\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\websitegereja-ci4\system\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\websitegereja-ci4\system\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\websitegereja-ci4\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\websitegereja-ci4\app\Models\ModelJemaat.php(17): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\websitegereja-ci4\app\Controllers\Jemaat.php(39): App\Models\ModelJemaat->InsertData(Array)
+#6 C:\xampp\htdocs\websitegereja-ci4\system\CodeIgniter.php(933): App\Controllers\Jemaat->InsertData()
+#7 C:\xampp\htdocs\websitegereja-ci4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+#8 C:\xampp\htdocs\websitegereja-ci4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\websitegereja-ci4\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\websitegereja-ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\websitegereja-ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-04-23 08:04:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama' cannot be null
+[Method: GET, Route: Jemaat/InsertData]
+in SYSTEMPATH\Database\BaseConnection.php on line 675.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (:nama:, :alamat:, :no_tlpn:, :email:, :tanggal_lahir:, :status:)', [...], false)
+ 2 APPPATH\Models\ModelJemaat.php(17): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Jemaat.php(39): App\Models\ModelJemaat->InsertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jemaat->InsertData()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:04:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (:nama:, :alamat:, :no_tlpn:, :email:, :tanggal_lahir:, :status:)', [...], false)
+ 4 APPPATH\Models\ModelJemaat.php(17): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Jemaat.php(39): App\Models\ModelJemaat->InsertData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jemaat->InsertData()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:04:18 --> [Caused by] mysqli_sql_exception: Column 'nama' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jemaat` (`nama`, `alamat`, `no_tlpn`, `email`, `tanggal_lahir`, `status`) VALUES (:nama:, :alamat:, :no_tlpn:, :email:, :tanggal_lahir:, :status:)', [...], false)
+ 5 APPPATH\Models\ModelJemaat.php(17): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Jemaat.php(39): App\Models\ModelJemaat->InsertData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Jemaat->InsertData()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jemaat))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 08:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 08:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 08:17:01 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:17:09 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:17:58 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:25:00 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:26:19 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:27:57 --> Error: Class "App\Controllers\ModelJemaat" not found
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:28:47 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:29:19 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 APPPATH\Controllers\Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:30:13 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 50.
+ 1 APPPATH\Controllers\Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:30:14 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 50.
+ 1 APPPATH\Controllers\Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:37:21 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:39:30 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:39:55 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:40:05 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:48:00 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:49:52 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:52:50 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:56:29 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:56:31 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 08:59:48 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 09:00:13 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-23 09:00:23 --> ErrorException: Undefined property: App\Controllers\Home::$ModelJemaat
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelJemaat', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 09:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 09:09:42 --> Error: Class "App\Controllers\App\Models\Jemaat" not found
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 09:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 09:12:40 --> ErrorException: Undefined array key "jam"
+[Method: GET, Route: Home/Jemaat]
+in APPPATH\Views\front-end\v_jemaat.php on line 23.
+ 1 APPPATH\Views\front-end\v_jemaat.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jam"', 'C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\front-end\\v_jemaat.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\front-end\\v_jemaat.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('front-end/v_jemaat', [], true)
+ 5 APPPATH\Views\v_template.php(99): view('front-end/v_jemaat')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\websitegereja-ci4\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Home.php(51): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Jemaat()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-04-23 09:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 09:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 10:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
