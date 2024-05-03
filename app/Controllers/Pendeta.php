@@ -31,8 +31,6 @@ class Pendeta extends BaseController
 
     // Cek apakah file foto berhasil diunggah
     if ($foto->isValid() && ! $foto->hasMoved()) {
-        // Debug foto
-        dd($foto); // Menghentikan eksekusi skrip setelah dd()
 
         // Pindahkan file foto ke direktori yang ditentukan
         $foto->move(ROOTPATH . 'gambar/', $foto->getName());
@@ -112,22 +110,5 @@ class Pendeta extends BaseController
         return $response;
     }
 
-    public function upload() {
-        $config['upload_path'] = './gambar';
-        $config['allowed_types'] = 'gif|jpg|png';
-        $config['max_size'] = 1000;
-        $config['max_width'] = '1024';
-        $config['max_height'] = '768';
-
-        $this->load->library('upload', $config);
-
-        if (!$this->upload->do_upload('userfile')) {
-            $error = array('error' => $this->upload->display_errors());
-            $this->load->view('upload_form', $error);
-        } else{
-            $data = array('upload_data' => $this->upload->data());
-            $this->load->view('upload_success', $data);
-        }
-
-    }
+    
 }
